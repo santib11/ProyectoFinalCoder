@@ -3,3 +3,111 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+main{
+    background-image: linear-gradient(rgba(60, 60, 73, 0.8), rgba(60, 60, 73, 0.8)),url("../img/fondo.png");
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.fondo_header_footer{
+    background-color: rgba(54, 75, 153, 0.842);
+}
+
+.imagen_logo{
+    width: 10rem;
+    margin: 15px;
+}
+
+
+/* main home */
+
+.centrar_imagenes_home{
+    text-align: center;
+}
+
+.centrar_logo_home{
+    display: inline-block;
+    width: 80%;
+}
+
+.centrar_imagenes_home img{
+    display: inline-block;
+    width: 90%;
+    margin-bottom: 10px;
+    border-radius: 4rem;
+} 
+
+.contenedor{
+    display: flex;
+    flex-flow: column wrap;  
+}
+
+:is(.contenedor h2, .contenedor p,footer div h3,){
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.contenedor h2{
+    font-size: 2.4rem;
+    color: rgb(196, 217, 242);
+}
+
+.contenedor p{
+    font-size: 1.5rem;
+    margin: 0px 15px 0px 15px;
+    color: whitesmoke;
+}
+
+.volver_arriba{
+    position: sticky;
+    margin: 15px;
+    bottom: 0;
+    color: white;
+    padding-bottom: 15px;
+}
+
+/* footer */
+
+footer div h3{
+    font-size: 2rem;
+    color: black;
+}
+
+.contenedor_redes_footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contenedor_novedades{
+    display: flex;
+    margin: 25px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor_novedades label{
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;   
+}
+
+footer div ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    font-weight: bold;   
+    font-size: 1.2rem;
+    justify-content: space-around;
+}
+
+footer h3{
+    font-size: 1rem;
+    text-align: center;
+    color: black;
+}
