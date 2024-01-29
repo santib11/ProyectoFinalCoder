@@ -18,7 +18,7 @@ a{
 }
 
 .imagen_logo{
-    width: 10rem;
+    width: 12rem;
     margin: 15px;
 }
 
@@ -74,6 +74,7 @@ a{
 
 footer div h3{
     font-size: 2rem;
+    font-weight: bold; 
     color: black;
 }
 
@@ -96,7 +97,7 @@ footer div h3{
     font-weight: bold;   
 }
 
-footer div ul{
+.contenedor_paginas{
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -110,4 +111,69 @@ footer h3{
     font-size: 1rem;
     text-align: center;
     color: black;
+    margin: 0;
+}
+
+@media screen and (min-width: 1024px){
+
+    /* main home */
+    .grid_article_home_uno{
+        display: grid;
+        grid-template-columns: 45% 55%;
+        grid-template-rows: auto;
+    }
+
+    .colocar_logo_home{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding: 20px 0px;
+        width: 70%;
+        justify-self: center;
+    }
+
+    .colocar_imagen{
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+
+    article div{
+        align-self: center;
+    }
+
+    .grid_article_home_dos{
+        display: grid;
+        grid-template-columns: 55% 45%;
+        grid-template-rows: auto;
+        margin: 40px 0;
+    }
+
+    .colocar_texto{
+        grid-row-start: 1;
+    }
+
+    /* footer */
+    .flex_pc{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .contenedor_paginas{
+        display:block;
+        font-size: 1rem;
+    }
+
+    .ordenar_paginas{
+        margin: 50px auto 0 15px;
+        order:-1;
+        width: 2fr;
+    }
+
+    .contenedor_novedades{
+        margin: 50px 15px 0 85px;
+    }
+
+    .a{
+        margin:15px auto;
+    }
 }
