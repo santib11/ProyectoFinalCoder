@@ -126,6 +126,13 @@ footer h3{
 
 /* main Noticias */
 
+.acomodar_carrucel_noticias{
+    width: 80%;
+    margin: auto;
+    border-radius: 55px 55px 55px 55px;
+    overflow: hidden;
+}
+
 .video-responsive {
 	height: 0;
 	overflow: hidden;
@@ -183,7 +190,7 @@ footer h3{
     }
     
     .ordenar_paginas{
-        margin: 50px auto 0 15px;
+        margin: 50px 170px 0 15px;
         order:-1;
         width: 2fr;
     }
@@ -228,5 +235,6 @@ footer h3{
         grid-row-start: 1;
     }
 
-
+    /* main Noticia */
+    
 }
