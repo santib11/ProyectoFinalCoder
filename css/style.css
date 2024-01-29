@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+/* Tomado desde una perspectiva first mobile */
+
+/* Etiquetas */
+
 main{
     background-image: linear-gradient(rgba(60, 60, 73, 0.8), rgba(60, 60, 73, 0.8)),url("../img/fondo.png");
 }
@@ -12,6 +16,17 @@ a{
     color: white;
     text-decoration: none;
 }
+
+h1{
+    text-align: center;
+    color: rgb(196, 217, 242);
+    padding: 25px 0;
+    font-size: 4rem;
+}
+
+/* Clases */
+
+/* Header */
 
 .fondo_header_footer{
     background-color: rgba(54, 75, 153, 0.842);
@@ -22,55 +37,7 @@ a{
     margin: 15px;
 }
 
-
-/* main home */
-
-.centrar_imagenes_home{
-    text-align: center;
-}
-
-.centrar_logo_home{
-    display: inline-block;
-    width: 80%;
-}
-
-.centrar_imagenes_home img{
-    display: inline-block;
-    width: 90%;
-    margin-bottom: 10px;
-    border-radius: 4rem;
-} 
-
-.contenedor{
-    display: flex;
-    flex-flow: column wrap;  
-}
-
-:is(.contenedor h2, .contenedor p,footer div h3,){
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-}
-
-.contenedor h2{
-    font-size: 2.4rem;
-    color: rgb(196, 217, 242);
-}
-
-.contenedor p{
-    font-size: 1.5rem;
-    margin: 0px 15px 0px 15px;
-    color: whitesmoke;
-}
-
-.volver_arriba{
-    position: sticky;
-    margin: 15px;
-    bottom: 0;
-    color: white;
-    padding-bottom: 15px;
-}
-
-/* footer */
+/* Footer */
 
 footer div h3{
     font-size: 2rem;
@@ -114,16 +81,126 @@ footer h3{
     margin: 0;
 }
 
-@media screen and (min-width: 1024px){
 
-    /* main home */
+/* main Home */
+
+.centrar_imagenes_home{
+    text-align: center;
+}
+
+.centrar_imagenes_home img{
+    width: 90%;
+    margin-bottom: 10px;
+    border-radius: 4rem;
+} 
+
+.contenedor{
+    display: flex;
+    flex-flow: column wrap;  
+}
+
+:is(.contenedor h2, .contenedor p, footer div h3, h1){
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.contenedor h2{
+    font-size: 2.4rem;
+    color: rgb(196, 217, 242);
+}
+
+.contenedor p{
+    font-size: 1.5rem;
+    margin: 0px 15px 0px 15px;
+    color: whitesmoke;
+}
+
+.volver_arriba{
+    display: inline-block;
+    position: sticky;
+    margin: 15px;
+    bottom: 0;
+    color: white;
+    padding-bottom: 15px;
+}
+
+/* main Noticias */
+
+.video-responsive {
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	position: relative;
+}
+
+.video-responsive iframe, .video-responsive object, .video-responsive embed {
+	height: 100%;
+	left: 5%;
+	position: absolute;
+	top: 0;
+	width: 90%;
+    border-radius: 2rem;
+}
+
+.alinear_separadores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.linea_horizontal{
+    border-bottom: 8px solid orange;
+    margin: auto 0;
+    width: 33%;
+    border-radius: 1rem;
+}
+
+.logo_divisor{
+    margin: 20px;
+    width: 60px
+}
+
+
+/* Media query desktop */
+
+@media screen and (min-width: 1024px){
+    
+    /* Footer */
+    .flex_pc{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .contenedor_paginas{
+        display:block;
+        font-size: 1rem;
+    }
+    
+    .contenedor_redes{
+        margin:15px auto;
+    }
+    
+    .ordenar_paginas{
+        margin: 50px auto 0 15px;
+        order:-1;
+        width: 2fr;
+    }
+    
+    .contenedor_novedades{
+        margin: 50px 15px 0 85px;
+    }
+
+    /* main Home */
+
     .grid_article_home_uno{
         display: grid;
         grid-template-columns: 45% 55%;
         grid-template-rows: auto;
     }
-
-    .colocar_logo_home{
+    
+    .colocar_logo_home_grid{
         grid-column-start: 1;
         grid-column-end: 3;
         padding: 20px 0px;
@@ -131,7 +208,7 @@ footer h3{
         justify-self: center;
     }
 
-    .colocar_imagen{
+    .colocar_imagen_grid{
         grid-column-start: 2;
         grid-row-start: 2;
     }
@@ -147,33 +224,9 @@ footer h3{
         margin: 40px 0;
     }
 
-    .colocar_texto{
+    .colocar_texto_grid{
         grid-row-start: 1;
     }
 
-    /* footer */
-    .flex_pc{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
 
-    .contenedor_paginas{
-        display:block;
-        font-size: 1rem;
-    }
-
-    .ordenar_paginas{
-        margin: 50px auto 0 15px;
-        order:-1;
-        width: 2fr;
-    }
-
-    .contenedor_novedades{
-        margin: 50px 15px 0 85px;
-    }
-
-    .a{
-        margin:15px auto;
-    }
 }
