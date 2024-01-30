@@ -299,4 +299,31 @@ footer h3{
         grid-row-start: 1;
     }
     
+    /* main Sobre Nosotros */
+
+    .centrar_sobre_nosotros{
+        width: 75%;
+        margin: auto;
+    }
+    
+    .centrar_sobre_nosotros p{
+        padding: 10px;
+        text-align: justify;
+    }
+
+    .modificar_contacto h2{
+        margin-left: 15px;
+        text-align: start;
+    }
+
+    .modificar_contacto p{
+        padding: 10px;
+        text-align: left;
+    }
+
+    .grid_form{
+        display: grid;
+        grid-template-columns: 1.2fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
 }
