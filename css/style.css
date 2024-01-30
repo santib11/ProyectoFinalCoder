@@ -156,15 +156,16 @@ footer h3{
 }
 
 .video-responsive {
-	height: 0;
+    height: 0;
 	overflow: hidden;
 	padding-bottom: 56.25%;
 	padding-top: 30px;
 	position: relative;
+    margin-top: 10px;
 }
 
 .video-responsive iframe, .video-responsive object, .video-responsive embed {
-	height: 100%;
+    height: 100%;
 	left: 5%;
 	position: absolute;
 	top: 0;
@@ -188,6 +189,61 @@ footer h3{
 .logo_divisor{
     margin: 20px;
     width: 60px
+}
+
+/* main Heroes */
+
+.centrar_imagen_heroes{
+    text-align: center;
+}
+
+.centrar_imagen_heroes img{
+    width: 90%;
+    margin-bottom: 10px;
+    border-radius: 1em;
+} 
+
+.linea_horizontal_izquierda{
+    border-bottom: 8px solid rgb(196, 217, 242);
+    margin: auto 0;
+    width: 10%;
+    border-radius: 1rem;
+}
+
+.linea_horizontal_derecha{
+    border-bottom: 8px solid rgb(196, 217, 242);
+    margin: auto 0;
+    width: 60%;
+    border-radius: 1rem;
+}
+
+.rol{
+    width: 22%;
+    margin: 20px 10px;
+    border-radius: 2rem;
+}
+
+.caracteristicas_heroe{
+    display: flex;
+    flex-flow: column wrap;
+    list-style: none;
+    padding: 10px;
+    font-weight: bold;  
+    font-size: 1.2rem;
+    color: white;
+    justify-content: space-around;
+}
+
+.caracteristicas_heroe li span{
+    font-size: 1.4rem;
+    color: rgb(196, 217, 242);
+}
+
+.titulo_origenes{
+    text-align: center;
+    font-weight: bold; 
+    font-size: 2rem;
+    color: rgb(196, 217, 242);
 }
 
 /* main Sobre Nosotros */
@@ -233,6 +289,7 @@ footer h3{
     width: 30%;
 }
 
+
 /* Media query desktop */
 
 @media screen and (min-width: 1024px){
@@ -247,10 +304,6 @@ footer h3{
     .contenedor_paginas{
         display:block;
         font-size: 1rem;
-    }
-    
-    .contenedor_redes{
-        margin:15px auto;
     }
     
     .ordenar_paginas{
