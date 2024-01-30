@@ -34,7 +34,6 @@ h1{
 
 .imagen_logo{
     width: 12rem;
-    margin: 15px;
 }
 
 /* Footer */
@@ -234,7 +233,5 @@ footer h3{
     .colocar_texto_grid{
         grid-row-start: 1;
     }
-
-    /* main Noticia */
     
 }
