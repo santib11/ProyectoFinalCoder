@@ -44,11 +44,11 @@
                 cursor: pointer;
                 display: block;
                 width: 25%;
+                transition: all 0.2s
             }
             .boton:active{
                 background-color: green;
-                font-size: 1.5rem;
-                width: 30%;
+                transform: scale(1.1)
             }
         }
     }

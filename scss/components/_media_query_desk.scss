@@ -1,14 +1,22 @@
 
 @media screen and (min-width: 1024px){
+    /* Header */
+    header{
+        .subrayar_nav{
+            li:hover{
+                text-decoration: underline;
+                background-color: rgba(60, 72, 114, 0.842);
+                border-radius: 1rem;
+            }
+        }
+    }
+
     /* Footer */
     footer{
         .flex_pc{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            .contenedor_novedades{
-                margin: 50px 15px 0 85px;
-            }
             .ordenar_paginas{
                 margin: 50px 170px 0 15px;
                 order:-1;
@@ -16,10 +24,15 @@
                 .contenedor_paginas{
                     display:block;
                     font-size: 1rem;
+                    li{
+                        margin-bottom: 10px;
+                    }
                 }
             }
+            .contenedor_novedades{
+                margin: 50px 15px 0 85px;
+            }
         }
-
     }
 
     /* main Home */
@@ -43,8 +56,10 @@
                 grid-row-start: 1;
             }
         }
-        article div{
-            align-self: center;
+        article{
+            div{
+                align-self: center;
+            }
         }
         .grid_article_home_dos{
             display: grid;

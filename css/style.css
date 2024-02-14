@@ -72,6 +72,11 @@ footer div .contenedor_redes_footer {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+footer div .contenedor_redes_footer a:hover {
+  background-color: rgba(59, 67, 99, 0.842);
+  border-radius: 1rem;
+  padding: 7px;
+}
 footer div .contenedor_novedades {
   display: flex;
   margin: 25px;
@@ -90,6 +95,11 @@ footer div .contenedor_paginas {
   font-weight: bold;
   font-size: 1.2rem;
   justify-content: space-around;
+}
+footer div .contenedor_paginas a:hover {
+  background-color: rgba(59, 67, 99, 0.842); /* Cambia este color a tu preferencia */
+  border-radius: 1rem;
+  padding: 7px 0;
 }
 footer h3 {
   font-size: 1rem;
@@ -244,23 +254,26 @@ main .titulo_origenes {
   cursor: pointer;
   display: block;
   width: 25%;
+  transition: all 0.2s;
 }
 .imagen_acerca_nosotros .contenedor_sobre_nosotros form .boton:active {
   background-color: green;
-  font-size: 1.5rem;
-  width: 30%;
+  transform: scale(1.1);
 }
 
 /* Media query desktop */
 @media screen and (min-width: 1024px) {
+  /* Header */
+  header .subrayar_nav li:hover {
+    text-decoration: underline;
+    background-color: rgba(60, 72, 114, 0.842);
+    border-radius: 1rem;
+  }
   /* Footer */
   footer .flex_pc {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-  footer .flex_pc .contenedor_novedades {
-    margin: 50px 15px 0 85px;
   }
   footer .flex_pc .ordenar_paginas {
     margin: 50px 170px 0 15px;
@@ -270,6 +283,12 @@ main .titulo_origenes {
   footer .flex_pc .ordenar_paginas .contenedor_paginas {
     display: block;
     font-size: 1rem;
+  }
+  footer .flex_pc .ordenar_paginas .contenedor_paginas li {
+    margin-bottom: 10px;
+  }
+  footer .flex_pc .contenedor_novedades {
+    margin: 50px 15px 0 85px;
   }
   /* main Home */
   main .grid_article_home_uno {

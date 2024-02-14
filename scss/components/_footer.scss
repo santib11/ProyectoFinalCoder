@@ -15,6 +15,11 @@ footer{
             a{
                 @extend %enlaces;
             }
+            a:hover{
+                background-color: rgba(59, 67, 99, 0.842);
+                border-radius: 1rem;
+                padding: 7px;
+            }
         }
         .contenedor_novedades{
             display: flex;
@@ -40,6 +45,11 @@ footer{
             justify-content: space-around;
             a{
                 @extend %enlaces;
+            }
+            a:hover{
+                background-color: rgba(59, 67, 99, 0.842); /* Cambia este color a tu preferencia */
+                border-radius: 1rem;
+                padding: 7px 0;
             }
         }
     }
