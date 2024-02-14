@@ -1,11 +1,11 @@
+/* reset */
+
 @import "components/reset";
 
 @import "./base/variables";
 @import "./base/extends";
 
 /* Tomado desde una perspectiva first mobile */
-
-/* Clases */
 
 /* Header */
 
@@ -27,3 +27,5 @@
 /* main Sobre nosotros  */
 @import "components/sobre_nosotros";
 
+/* Media query desktop */
+@import "components/media_query_desk";

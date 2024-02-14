@@ -1,0 +1,94 @@
+
+@media screen and (min-width: 1024px){
+    /* Footer */
+    footer{
+        .flex_pc{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .contenedor_novedades{
+                margin: 50px 15px 0 85px;
+            }
+            .ordenar_paginas{
+                margin: 50px 170px 0 15px;
+                order:-1;
+                width: 2fr;
+                .contenedor_paginas{
+                    display:block;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+    }
+
+    /* main Home */
+    main{
+        .grid_article_home_uno{
+            display: grid;
+            grid-template-columns: 45% 55%;
+            grid-template-rows: auto;
+            .colocar_logo_home_grid{
+                grid-column-start: 1;
+                grid-column-end: 3;
+                padding: 20px 0px;
+                width: 70%;
+                justify-self: center;
+            }
+            .colocar_imagen_grid{
+                grid-column-start: 2;
+                grid-row-start: 2;
+            }
+            .colocar_texto_grid{
+                grid-row-start: 1;
+            }
+        }
+        article div{
+            align-self: center;
+        }
+        .grid_article_home_dos{
+            display: grid;
+            grid-template-columns: 55% 45%;
+            grid-template-rows: auto;
+            margin: 40px 0;
+        }
+    }
+    
+    /* main Heroes */
+    main{
+        .grid_heroes{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: auto;
+            justify-content: start;
+            align-content: start;
+        }
+    }
+
+    /* main Sobre Nosotros */
+    main{
+        .centrar_sobre_nosotros{
+            width: 75%;
+            margin: auto;
+            p{
+                padding: 10px;
+                text-align: justify;
+            }
+        }
+        .modificar_contacto{
+            h2{
+                margin-left: 15px;
+                text-align: start;
+            }
+            p{
+                padding: 10px;
+                text-align: left;
+            }
+            .grid_form{
+                display: grid;
+                grid-template-columns: 1.2fr 1fr 1fr;
+                grid-template-rows: auto;
+            }
+        }
+    }
+}

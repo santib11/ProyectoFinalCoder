@@ -1,8 +1,7 @@
-main{
-    .imagen_acerca_nosotros{
-        background-size: cover;
-        background-image: linear-gradient(rgba(101, 101, 126, 0.5), rgba(45, 199, 226, 0.7)), url("../img/extra.jpg");  
-    }
+
+.imagen_acerca_nosotros{
+    background-size: cover;
+    background-image: linear-gradient(rgba(101, 101, 126, 0.5), rgba(45, 199, 226, 0.7)), url("../img/extra.jpg");  
     .contenedor_sobre_nosotros{
         display: flex;
         flex-flow: column wrap;

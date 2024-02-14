@@ -1,10 +1,11 @@
+/* reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-footer div .contenedor_paginas a, footer div div .contenedor_redes_footer a {
+footer div .contenedor_paginas a, footer div .contenedor_redes_footer a {
   color: white;
   text-decoration: none;
 }
@@ -18,7 +19,7 @@ main .video-responsive embed, main .video-responsive object, main .video-respons
   border-radius: 2rem;
 }
 
-main .contenedor_sobre_nosotros p, main .contenedor_sobre_nosotros h2, main .contenedor p, main .contenedor h2, footer div div h3 {
+.imagen_acerca_nosotros .contenedor_sobre_nosotros p, .imagen_acerca_nosotros .contenedor_sobre_nosotros h2, main .contenedor p, main .contenedor h2, footer div h3 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
 }
@@ -34,13 +35,13 @@ main h1, main .contenedor h1 {
   font-size: 4rem;
 }
 
-main .contenedor_sobre_nosotros form label {
+.imagen_acerca_nosotros .contenedor_sobre_nosotros form label, footer div .contenedor_novedades label {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin: 8px 8px;
   color: black;
 }
 
-main .contenedor_sobre_nosotros form input, main .contenedor_sobre_nosotros form select {
+.imagen_acerca_nosotros .contenedor_sobre_nosotros form input, .imagen_acerca_nosotros .contenedor_sobre_nosotros form select, footer div .contenedor_novedades input {
   padding: 8px;
   margin-bottom: 12px;
   border: 1px solid white;
@@ -49,7 +50,6 @@ main .contenedor_sobre_nosotros form input, main .contenedor_sobre_nosotros form
 }
 
 /* Tomado desde una perspectiva first mobile */
-/* Clases */
 /* Header */
 header .fondo_header_footer {
   background-color: rgba(54, 75, 153, 0.842);
@@ -62,12 +62,12 @@ header .imagen_logo {
 footer {
   background-color: rgba(54, 75, 153, 0.842);
 }
-footer div div h3 {
+footer div h3 {
   font-size: 2rem;
   font-weight: bold;
   color: black;
 }
-footer div div .contenedor_redes_footer {
+footer div .contenedor_redes_footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -80,7 +80,6 @@ footer div .contenedor_novedades {
 }
 footer div .contenedor_novedades label {
   font-size: 1.5rem;
-  color: black;
   font-weight: bold;
 }
 footer div .contenedor_paginas {
@@ -113,10 +112,10 @@ main .contenedor p {
   margin: 0px 15px 0px 15px;
   color: whitesmoke;
 }
-main .centrar_imagenes_home {
+main .contenedor .centrar_imagenes_home {
   text-align: center;
 }
-main .centrar_imagenes_home img {
+main .contenedor .centrar_imagenes_home img {
   width: 90%;
   margin-bottom: 10px;
   border-radius: 4rem;
@@ -208,26 +207,26 @@ main .titulo_origenes {
 }
 
 /* main Sobre nosotros  */
-main .imagen_acerca_nosotros {
+.imagen_acerca_nosotros {
   background-size: cover;
   background-image: linear-gradient(rgba(101, 101, 126, 0.5), rgba(45, 199, 226, 0.7)), url("../img/extra.jpg");
 }
-main .contenedor_sobre_nosotros {
+.imagen_acerca_nosotros .contenedor_sobre_nosotros {
   display: flex;
   flex-flow: column wrap;
 }
-main .contenedor_sobre_nosotros h2 {
+.imagen_acerca_nosotros .contenedor_sobre_nosotros h2 {
   font-size: 3rem;
   color: rgb(196, 217, 242);
 }
-main .contenedor_sobre_nosotros p {
+.imagen_acerca_nosotros .contenedor_sobre_nosotros p {
   font-size: 1.5rem;
   margin: 0px 15px 15px 15px;
   color: black;
   background-color: rgba(230, 218, 218, 0.61);
   border-radius: 1rem;
 }
-main .contenedor_sobre_nosotros form {
+.imagen_acerca_nosotros .contenedor_sobre_nosotros form {
   padding: 10px 20px;
   border-radius: 1rem;
   margin: 0 25px;
@@ -235,7 +234,7 @@ main .contenedor_sobre_nosotros form {
   flex-flow: column wrap;
   background-color: rgba(255, 255, 255, 0.5);
 }
-main .contenedor_sobre_nosotros form .boton {
+.imagen_acerca_nosotros .contenedor_sobre_nosotros form .boton {
   background-color: orange;
   color: white;
   padding: 10px 15px;
@@ -246,10 +245,91 @@ main .contenedor_sobre_nosotros form .boton {
   display: block;
   width: 25%;
 }
-main .contenedor_sobre_nosotros form .boton:active {
+.imagen_acerca_nosotros .contenedor_sobre_nosotros form .boton:active {
   background-color: green;
   font-size: 1.5rem;
   width: 30%;
+}
+
+/* Media query desktop */
+@media screen and (min-width: 1024px) {
+  /* Footer */
+  footer .flex_pc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  footer .flex_pc .contenedor_novedades {
+    margin: 50px 15px 0 85px;
+  }
+  footer .flex_pc .ordenar_paginas {
+    margin: 50px 170px 0 15px;
+    order: -1;
+    width: 2fr;
+  }
+  footer .flex_pc .ordenar_paginas .contenedor_paginas {
+    display: block;
+    font-size: 1rem;
+  }
+  /* main Home */
+  main .grid_article_home_uno {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: auto;
+  }
+  main .grid_article_home_uno .colocar_logo_home_grid {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 20px 0px;
+    width: 70%;
+    justify-self: center;
+  }
+  main .grid_article_home_uno .colocar_imagen_grid {
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+  main .grid_article_home_uno .colocar_texto_grid {
+    grid-row-start: 1;
+  }
+  main article div {
+    align-self: center;
+  }
+  main .grid_article_home_dos {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: auto;
+    margin: 40px 0;
+  }
+  /* main Heroes */
+  main .grid_heroes {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    justify-content: start;
+    align-content: start;
+  }
+  /* main Sobre Nosotros */
+  main .centrar_sobre_nosotros {
+    width: 75%;
+    margin: auto;
+  }
+  main .centrar_sobre_nosotros p {
+    padding: 10px;
+    text-align: justify;
+  }
+  main .modificar_contacto h2 {
+    margin-left: 15px;
+    text-align: start;
+  }
+  main .modificar_contacto p {
+    padding: 10px;
+    text-align: left;
+  }
+  main .modificar_contacto .grid_form {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

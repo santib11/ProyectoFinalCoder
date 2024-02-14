@@ -2,20 +2,18 @@
 footer{
     background-color: $color_fondo;
     div{
-        div{
-            h3{
-                font-size: 2rem;
-                font-weight: bold; 
-                color: black;
-                @extend %centrado_tipografia;
-            } 
-            .contenedor_redes_footer{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
-                a{
-                    @extend %enlaces;
-                }
+        h3{
+            font-size: 2rem;
+            font-weight: bold; 
+            color: black;
+            @extend %centrado_tipografia;
+        } 
+        .contenedor_redes_footer{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            a{
+                @extend %enlaces;
             }
         }
         .contenedor_novedades{
@@ -25,8 +23,11 @@ footer{
             align-items: center;
             label{
                 font-size: 1.5rem;
-                color: black;
                 font-weight: bold;   
+                @extend %labels;
+            }
+            input{
+                @extend %estilos_input_select;
             }
         }
         .contenedor_paginas{

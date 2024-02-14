@@ -17,13 +17,13 @@ main{
             color: whitesmoke;
             @extend %centrado_tipografia;
         }
-    }
-    .centrar_imagenes_home{
-        text-align: center;
-        img{
-            width: 90%;
-            margin-bottom: 10px;
-            border-radius: 4rem;
+        .centrar_imagenes_home{
+            text-align: center;
+            img{
+                width: 90%;
+                margin-bottom: 10px;
+                border-radius: 4rem;
+            }
         }
     }
     .volver_arriba{
