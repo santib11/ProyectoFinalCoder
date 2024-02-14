@@ -1,1 +1,29 @@
 @import "components/reset";
+
+@import "./base/variables";
+@import "./base/extends";
+
+/* Tomado desde una perspectiva first mobile */
+
+/* Clases */
+
+/* Header */
+
+@import "components/header";
+
+/* Footer */
+
+@import "components/footer";
+
+/* main Home */
+@import "components/index";
+
+/* main Noticias  */
+@import "components/noticias";
+
+/* main Heroes  */
+@import "components/heroes";
+
+/* main Sobre nosotros  */
+@import "components/sobre_nosotros";
+

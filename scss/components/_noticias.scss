@@ -1,0 +1,44 @@
+main{
+    h1{
+        @extend %estilos_h1;
+    }
+    @extend %fondo_main;
+    .acomodar_carrucel_noticias{
+        width: 80%;
+        margin: auto;
+        border-radius: 3rem;
+        overflow: hidden;
+    }
+    .video-responsive {
+        height: 0;
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        position: relative;
+        margin-top: 10px;
+        iframe{
+            @extend %estilos_iframe;
+        }
+        object{
+            @extend %estilos_iframe;
+        }
+        embed{
+            @extend %estilos_iframe;
+        }
+    }
+    .alinear_separadores{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .linea_horizontal{
+            border-bottom: 8px solid orange;
+            margin: auto 0;
+            width: 33%;
+            border-radius: 1rem;
+        }
+        .logo_divisor{
+            margin: 20px;
+            width: 60px;
+        }
+    }
+}

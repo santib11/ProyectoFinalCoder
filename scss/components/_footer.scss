@@ -1,0 +1,51 @@
+
+footer{
+    background-color: $color_fondo;
+    div{
+        div{
+            h3{
+                font-size: 2rem;
+                font-weight: bold; 
+                color: black;
+                @extend %centrado_tipografia;
+            } 
+            .contenedor_redes_footer{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                a{
+                    @extend %enlaces;
+                }
+            }
+        }
+        .contenedor_novedades{
+            display: flex;
+            margin: 25px;
+            flex-direction: column;
+            align-items: center;
+            label{
+                font-size: 1.5rem;
+                color: black;
+                font-weight: bold;   
+            }
+        }
+        .contenedor_paginas{
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+            font-weight: bold;   
+            font-size: 1.2rem;
+            justify-content: space-around;
+            a{
+                @extend %enlaces;
+            }
+        }
+    }
+    h3{
+        font-size: 1rem;
+        text-align: center;
+        color: black;
+        margin: 0;
+    }
+}

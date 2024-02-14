@@ -1,0 +1,43 @@
+main{
+    @extend %fondo_main;
+    .contenedor{
+        display: flex;
+        flex-flow: column wrap;  
+        h1{
+            @extend %estilos_h1
+        }
+        h2{
+            font-size: 2.4rem;
+            color: $color_titulos;
+            @extend %centrado_tipografia;
+        }
+        p{
+            font-size: 1.5rem;
+            margin: 0px 15px 0px 15px;
+            color: whitesmoke;
+            @extend %centrado_tipografia;
+        }
+    }
+    .centrar_imagenes_home{
+        text-align: center;
+        img{
+            width: 90%;
+            margin-bottom: 10px;
+            border-radius: 4rem;
+        }
+    }
+    .volver_arriba{
+        display: inline-block;
+        position: sticky;
+        margin: 15px;
+        bottom: 0;
+        color: white;
+        padding-bottom: 15px;
+    }
+}
+
+
+
+
+
+

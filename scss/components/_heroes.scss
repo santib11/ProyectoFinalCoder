@@ -1,0 +1,57 @@
+main{
+    h1{
+        @extend %estilos_h1;
+    }
+    .centrar_imagen_heroes{
+        text-align: center;
+        img{
+            width: 90%;
+            margin-bottom: 10px;
+            border-radius: 1em;
+        }
+    }
+
+    
+    .linea_horizontal_izquierda{
+        border-bottom: 8px solid rgb(196, 217, 242);
+        margin: auto 0;
+        width: 8%;
+        border-radius: 1rem;
+    }
+    
+    .linea_horizontal_derecha{
+        border-bottom: 8px solid rgb(196, 217, 242);
+        margin: auto 0;
+        width: 47%;
+        border-radius: 1rem;
+    }
+    
+    .rol{
+        margin: auto 0;
+        border-radius: 2rem;
+    }
+    
+    .caracteristicas_heroe{
+        display: flex;
+        flex-flow: column wrap;
+        list-style: none;
+        padding: 10px;
+        font-weight: bold;  
+        font-size: 1.2rem;
+        color: white;
+        justify-content: space-around;
+        li{
+            span{
+                font-size: 1.4rem;
+            color: rgb(196, 217, 242);
+            }
+        }
+    }
+    
+    .titulo_origenes{
+        text-align: center;
+        font-weight: bold; 
+        font-size: 2rem;
+        color: rgb(196, 217, 242);
+    }
+}

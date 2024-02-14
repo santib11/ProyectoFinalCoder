@@ -4,4 +4,252 @@
   box-sizing: border-box;
 }
 
+footer div .contenedor_paginas a, footer div div .contenedor_redes_footer a {
+  color: white;
+  text-decoration: none;
+}
+
+main .video-responsive embed, main .video-responsive object, main .video-responsive iframe {
+  height: 100%;
+  left: 5%;
+  position: absolute;
+  top: 0;
+  width: 90%;
+  border-radius: 2rem;
+}
+
+main .contenedor_sobre_nosotros p, main .contenedor_sobre_nosotros h2, main .contenedor p, main .contenedor h2, footer div div h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+main {
+  background-image: linear-gradient(rgba(60, 60, 73, 0.8), rgba(60, 60, 73, 0.8)), url("../img/fondo.png");
+}
+
+main h1, main .contenedor h1 {
+  text-align: center;
+  color: rgb(196, 217, 242);
+  padding: 25px 0;
+  font-size: 4rem;
+}
+
+main .contenedor_sobre_nosotros form label {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 8px 8px;
+  color: black;
+}
+
+main .contenedor_sobre_nosotros form input, main .contenedor_sobre_nosotros form select {
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid white;
+  border-radius: 1rem;
+  font-size: 1rem;
+}
+
+/* Tomado desde una perspectiva first mobile */
+/* Clases */
+/* Header */
+header .fondo_header_footer {
+  background-color: rgba(54, 75, 153, 0.842);
+}
+header .imagen_logo {
+  width: 12rem;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(54, 75, 153, 0.842);
+}
+footer div div h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+}
+footer div div .contenedor_redes_footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+footer div .contenedor_novedades {
+  display: flex;
+  margin: 25px;
+  flex-direction: column;
+  align-items: center;
+}
+footer div .contenedor_novedades label {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: bold;
+}
+footer div .contenedor_paginas {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+  justify-content: space-around;
+}
+footer h3 {
+  font-size: 1rem;
+  text-align: center;
+  color: black;
+  margin: 0;
+}
+
+/* main Home */
+main .contenedor {
+  display: flex;
+  flex-flow: column wrap;
+}
+main .contenedor h2 {
+  font-size: 2.4rem;
+  color: rgb(196, 217, 242);
+}
+main .contenedor p {
+  font-size: 1.5rem;
+  margin: 0px 15px 0px 15px;
+  color: whitesmoke;
+}
+main .centrar_imagenes_home {
+  text-align: center;
+}
+main .centrar_imagenes_home img {
+  width: 90%;
+  margin-bottom: 10px;
+  border-radius: 4rem;
+}
+main .volver_arriba {
+  display: inline-block;
+  position: sticky;
+  margin: 15px;
+  bottom: 0;
+  color: white;
+  padding-bottom: 15px;
+}
+
+/* main Noticias  */
+main .acomodar_carrucel_noticias {
+  width: 80%;
+  margin: auto;
+  border-radius: 3rem;
+  overflow: hidden;
+}
+main .video-responsive {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  position: relative;
+  margin-top: 10px;
+}
+main .alinear_separadores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+main .alinear_separadores .linea_horizontal {
+  border-bottom: 8px solid orange;
+  margin: auto 0;
+  width: 33%;
+  border-radius: 1rem;
+}
+main .alinear_separadores .logo_divisor {
+  margin: 20px;
+  width: 60px;
+}
+
+/* main Heroes  */
+main .centrar_imagen_heroes {
+  text-align: center;
+}
+main .centrar_imagen_heroes img {
+  width: 90%;
+  margin-bottom: 10px;
+  border-radius: 1em;
+}
+main .linea_horizontal_izquierda {
+  border-bottom: 8px solid rgb(196, 217, 242);
+  margin: auto 0;
+  width: 8%;
+  border-radius: 1rem;
+}
+main .linea_horizontal_derecha {
+  border-bottom: 8px solid rgb(196, 217, 242);
+  margin: auto 0;
+  width: 47%;
+  border-radius: 1rem;
+}
+main .rol {
+  margin: auto 0;
+  border-radius: 2rem;
+}
+main .caracteristicas_heroe {
+  display: flex;
+  flex-flow: column wrap;
+  list-style: none;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+  justify-content: space-around;
+}
+main .caracteristicas_heroe li span {
+  font-size: 1.4rem;
+  color: rgb(196, 217, 242);
+}
+main .titulo_origenes {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  color: rgb(196, 217, 242);
+}
+
+/* main Sobre nosotros  */
+main .imagen_acerca_nosotros {
+  background-size: cover;
+  background-image: linear-gradient(rgba(101, 101, 126, 0.5), rgba(45, 199, 226, 0.7)), url("../img/extra.jpg");
+}
+main .contenedor_sobre_nosotros {
+  display: flex;
+  flex-flow: column wrap;
+}
+main .contenedor_sobre_nosotros h2 {
+  font-size: 3rem;
+  color: rgb(196, 217, 242);
+}
+main .contenedor_sobre_nosotros p {
+  font-size: 1.5rem;
+  margin: 0px 15px 15px 15px;
+  color: black;
+  background-color: rgba(230, 218, 218, 0.61);
+  border-radius: 1rem;
+}
+main .contenedor_sobre_nosotros form {
+  padding: 10px 20px;
+  border-radius: 1rem;
+  margin: 0 25px;
+  display: flex;
+  flex-flow: column wrap;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+main .contenedor_sobre_nosotros form .boton {
+  background-color: orange;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: block;
+  width: 25%;
+}
+main .contenedor_sobre_nosotros form .boton:active {
+  background-color: green;
+  font-size: 1.5rem;
+  width: 30%;
+}
+
 /*# sourceMappingURL=style.css.map */
