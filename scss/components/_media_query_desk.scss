@@ -38,9 +38,7 @@
     /* main Home */
     main{
         .grid_article_home_uno{
-            display: grid;
-            grid-template-columns: 45% 55%;
-            grid-template-rows: auto;
+            @include grid_articles(45%, 55%);
             .colocar_logo_home_grid{
                 grid-column-start: 1;
                 grid-column-end: 3;
@@ -62,9 +60,7 @@
             }
         }
         .grid_article_home_dos{
-            display: grid;
-            grid-template-columns: 55% 45%;
-            grid-template-rows: auto;
+            @include grid_articles(55%, 45%);
             margin: 40px 0;
         }
     }
@@ -72,9 +68,7 @@
     /* main Heroes */
     main{
         .grid_heroes{
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            grid-template-rows: auto;
+            @include grid_articles(2fr, 1fr);
             justify-content: start;
             align-content: start;
         }

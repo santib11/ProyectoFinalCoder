@@ -1,0 +1,22 @@
+@mixin lineas_divisoras($color, $width){
+    border-bottom: 8px solid $color;
+    margin: auto 0;
+    width: $width;
+    border-radius: 1rem;
+}
+
+@mixin negrita_y_size($size){
+    font-size: $size;
+    font-weight: bold; 
+}
+
+@mixin formato_imagenes($radius, $ancho){
+    width: $ancho;
+    margin-bottom: 10px;
+    border-radius: $radius;
+}
+@mixin grid_articles($size1, $size){
+    display: grid;
+    grid-template-columns: $size1 $size;
+    grid-template-rows: auto;
+}

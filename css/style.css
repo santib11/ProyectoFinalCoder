@@ -49,6 +49,11 @@ main h1, main .contenedor h1 {
   font-size: 1rem;
 }
 
+main .alinear_separadores, footer div .contenedor_paginas, footer div .contenedor_redes_footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* Tomado desde una perspectiva first mobile */
 /* Header */
 header .fondo_header_footer {
@@ -68,8 +73,6 @@ footer div h3 {
   color: black;
 }
 footer div .contenedor_redes_footer {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 footer div .contenedor_redes_footer a:hover {
@@ -88,16 +91,14 @@ footer div .contenedor_novedades label {
   font-weight: bold;
 }
 footer div .contenedor_paginas {
-  display: flex;
-  flex-wrap: wrap;
   list-style: none;
   padding: 0;
-  font-weight: bold;
   font-size: 1.2rem;
+  font-weight: bold;
   justify-content: space-around;
 }
 footer div .contenedor_paginas a:hover {
-  background-color: rgba(59, 67, 99, 0.842); /* Cambia este color a tu preferencia */
+  background-color: rgba(59, 67, 99, 0.842);
   border-radius: 1rem;
   padding: 7px 0;
 }
@@ -155,8 +156,6 @@ main .video-responsive {
   margin-top: 10px;
 }
 main .alinear_separadores {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 main .alinear_separadores .linea_horizontal {
@@ -195,13 +194,21 @@ main .rol {
   margin: auto 0;
   border-radius: 2rem;
 }
+main .acomodar_imagenes_heroes {
+  text-align: center;
+}
+main .acomodar_imagenes_heroes img {
+  width: 70%;
+  margin-bottom: 10px;
+  border-radius: 4rem;
+}
 main .caracteristicas_heroe {
   display: flex;
   flex-flow: column wrap;
   list-style: none;
   padding: 10px;
-  font-weight: bold;
   font-size: 1.2rem;
+  font-weight: bold;
   color: white;
   justify-content: space-around;
 }
@@ -211,8 +218,8 @@ main .caracteristicas_heroe li span {
 }
 main .titulo_origenes {
   text-align: center;
-  font-weight: bold;
   font-size: 2rem;
+  font-weight: bold;
   color: rgb(196, 217, 242);
 }
 

@@ -5,30 +5,28 @@ main{
     .centrar_imagen_heroes{
         text-align: center;
         img{
-            width: 90%;
-            margin-bottom: 10px;
-            border-radius: 1em;
+            @include formato_imagenes(1em, 90%);
         }
     }
-
-    
+ 
     .linea_horizontal_izquierda{
-        border-bottom: 8px solid rgb(196, 217, 242);
-        margin: auto 0;
-        width: 8%;
-        border-radius: 1rem;
+        @include lineas_divisoras(rgb(196, 217, 242), 8%)
     }
     
     .linea_horizontal_derecha{
-        border-bottom: 8px solid rgb(196, 217, 242);
-        margin: auto 0;
-        width: 47%;
-        border-radius: 1rem;
+        @include lineas_divisoras(rgb(196, 217, 242), 47%);
     }
     
     .rol{
         margin: auto 0;
         border-radius: 2rem;
+    }
+
+    .acomodar_imagenes_heroes{
+        text-align: center;
+        img{
+            @include formato_imagenes(4rem, 70%);
+        }
     }
     
     .caracteristicas_heroe{
@@ -36,8 +34,7 @@ main{
         flex-flow: column wrap;
         list-style: none;
         padding: 10px;
-        font-weight: bold;  
-        font-size: 1.2rem;
+        @include negrita_y_size(1.2rem);
         color: white;
         justify-content: space-around;
         li{
@@ -50,8 +47,7 @@ main{
     
     .titulo_origenes{
         text-align: center;
-        font-weight: bold; 
-        font-size: 2rem;
-        color: rgb(196, 217, 242);
+        @include negrita_y_size(2rem);
+        color: $color_titulos;
     }
 }

@@ -27,14 +27,10 @@ main{
         }
     }
     .alinear_separadores{
-        display: flex;
-        flex-wrap: wrap;
+        @extend %flex;
         justify-content: space-evenly;
         .linea_horizontal{
-            border-bottom: 8px solid orange;
-            margin: auto 0;
-            width: 33%;
-            border-radius: 1rem;
+            @include lineas_divisoras(orange, 33%);
         }
         .logo_divisor{
             margin: 20px;
