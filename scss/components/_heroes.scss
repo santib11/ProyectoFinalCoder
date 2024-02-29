@@ -25,7 +25,7 @@ main{
     .acomodar_imagenes_heroes{
         text-align: center;
         img{
-            @include formato_imagenes(4rem, 70%);
+            @include formato_imagenes(4rem, 60%);
         }
     }
     

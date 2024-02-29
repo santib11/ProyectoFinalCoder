@@ -68,7 +68,7 @@
     /* main Heroes */
     main{
         .grid_heroes{
-            @include grid_articles(2fr, 1fr);
+            @include grid_articles(1fr, 1fr);
             justify-content: start;
             align-content: start;
         }

@@ -198,7 +198,7 @@ main .acomodar_imagenes_heroes {
   text-align: center;
 }
 main .acomodar_imagenes_heroes img {
-  width: 70%;
+  width: 60%;
   margin-bottom: 10px;
   border-radius: 4rem;
 }
@@ -329,7 +329,7 @@ main .titulo_origenes {
   /* main Heroes */
   main .grid_heroes {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     justify-content: start;
     align-content: start;
